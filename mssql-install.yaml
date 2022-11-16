@@ -1,9 +1,15 @@
 ---
 
-- hosts: 172.21.0.1
+- hosts: localhost
+
+  collections:
+  - kubernetes.core
 
   tasks:
 
+  - name: dependancy
+    shell: "hi"
+    
   # - name: dependancy
   #   dnf:
   #     name:
@@ -11,7 +17,7 @@
   #       - ansible-collection-microsoft-sql
   #       - rhel-system-roles
   #     state: latest
-    shell: "hi"
+
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
 
