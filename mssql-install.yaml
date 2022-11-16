@@ -8,9 +8,9 @@
     shell: "echo 'hi'"
 
   - name: dependancy
-    dnf:
+    yum:
       name:
-        - python3-dnf
+        - python3-yum
         # - ansible-collection-microsoft-sql
         # - rhel-system-roles
       state: present
