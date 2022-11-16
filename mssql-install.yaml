@@ -7,13 +7,14 @@
 
   tasks:
 
-  - name: dependancy
-    dnf:
-      name:
-        - python3-dnf
-        - ansible-collection-microsoft-sql
-        - rhel-system-roles
-      state: latest
+  # - name: dependancy
+  #   dnf:
+  #     name:
+  #       - python3-dnf
+  #       - ansible-collection-microsoft-sql
+  #       - rhel-system-roles
+  #     state: latest
+    shell: "echo 'hello'"
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
 
