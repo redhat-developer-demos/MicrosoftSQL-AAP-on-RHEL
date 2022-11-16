@@ -8,7 +8,7 @@
   tasks:
 
   - name: dependancy
-    shell: "dnf install -y ansible-collection-microsoft-sql rhel-system-roles"
+    shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
 
   # vars:
