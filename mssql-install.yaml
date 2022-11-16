@@ -2,11 +2,8 @@
 
 - hosts: localhost
 
-  collections:
-  - kubernetes.core
-
   tasks:
-
+  
   - name: dependancy
     shell: "echo 'hi'"
 
