@@ -11,7 +11,7 @@
   #       - ansible-collection-microsoft-sql
   #       - rhel-system-roles
   #     state: latest
-    shell: "echo 'hello'"
+    shell: "hi"
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
 
