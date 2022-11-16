@@ -8,8 +8,8 @@
   tasks:
 
   - name: dependancy
-    shell: "hi"
-    
+    shell: "echo 'hi'"
+
   # - name: dependancy
   #   dnf:
   #     name:
