@@ -3,17 +3,17 @@
 - hosts: localhost
 
   tasks:
+  
+  - name: dependancy
+    shell: "echo 'hi'"
 
   - name: dependancy
-    shell: "yum install -y ansible-collection-microsoft-sql"
-
-  # - name: dependancy
-  #   dnf:
-  #     name:
-  #       - python3-dnf
-  #       - ansible-collection-microsoft-sql
-  #       - rhel-system-roles
-  #     state: latest
+    dnf:
+      name:
+        # - python3-dnf
+        - ansible-collection-microsoft-sql
+        - rhel-system-roles
+      state: latest
 
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
