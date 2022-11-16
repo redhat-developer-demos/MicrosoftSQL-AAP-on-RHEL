@@ -10,6 +10,7 @@
   - name: dependancy
     dnf:
       name:
+        - python3-dnf
         - ansible-collection-microsoft-sql
         - rhel-system-roles
       state: latest
