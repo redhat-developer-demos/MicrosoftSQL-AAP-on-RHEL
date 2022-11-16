@@ -2,9 +2,6 @@
 
 - hosts: localhost
 
-  # collections:
-  # - kubernetes.core
-
   tasks:
 
   # - name: dependancy
