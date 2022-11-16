@@ -3,9 +3,9 @@
 - hosts: localhost
 
   tasks:
-  
+
   - name: dependancy
-    shell: "echo 'hi'"
+    shell: "yum install -y ansible-collection-microsoft-sql"
 
   # - name: dependancy
   #   dnf:
