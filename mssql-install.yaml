@@ -10,10 +10,10 @@
   - name: dependancy
     dnf:
       name:
-        # - python3-dnf
-        - ansible-collection-microsoft-sql
-        - rhel-system-roles
-      state: latest
+        - python3-dnf
+        # - ansible-collection-microsoft-sql
+        # - rhel-system-roles
+      state: present
 
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
