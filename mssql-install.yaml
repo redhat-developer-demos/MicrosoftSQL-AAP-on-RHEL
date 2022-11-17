@@ -3,6 +3,9 @@
 - hosts: localhost
 
   tasks:
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   
   - name: dependancy
     shell: "echo 'hi'"
