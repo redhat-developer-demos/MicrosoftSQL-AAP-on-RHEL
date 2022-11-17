@@ -13,13 +13,12 @@
  
     yum:
       name:
-        - python3-yum
-        # - ansible-collection-microsoft-sql
-        # - rhel-system-roles
-      state: present
-
+        - ansible-collection-microsoft-sql
+        - rhel-system-roles
     vars:
       ansible_python_interpreter: /usr/bin/python3
+
+
 
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
