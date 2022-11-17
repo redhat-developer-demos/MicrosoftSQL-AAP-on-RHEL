@@ -10,7 +10,7 @@
     shell: "ansible-galaxy collection install microsoft.sql"
     
   - name: Playbook_1
-      import_playbook: site.yaml
+    import_playbook: site.yaml
 
   # - name: dependancy
   #   ansible.builtin.dnf:
