@@ -4,13 +4,14 @@
 
   tasks:
 
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
-  
+
+
   - name: dependancy
     shell: "echo 'hi'"
 
   - name: dependancy
+    vars:
+      ansible_python_interpreter: /usr/bin/python3
     yum:
       name:
         - python3-yum
