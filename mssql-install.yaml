@@ -9,8 +9,8 @@
   - name: dependancy
     shell: "ansible-galaxy collection install microsoft.sql"
     
-  - name: Include a play after another play
-    import_playbook: site.yaml
+  - name: Playbook_1
+      import_playbook: site.yaml
 
   # - name: dependancy
   #   ansible.builtin.dnf:
