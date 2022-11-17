@@ -1,4 +1,23 @@
 ---
+- hosts: all
+  vars:
+    mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
+    mssql_accept_microsoft_cli_utilities_for_sql_server_eula: true
+    mssql_accept_microsoft_sql_server_2019_standard_eula: true
+    mssql_password: "p@55w0rD"
+    mssql_edition: Evaluation
+    mssql_ip_address: 0.0.0.0
+    mssql_enable_sql_agent: true
+    mssql_install_fts: true
+    mssql_install_powershell: true
+    mssql_tune_for_fua_storage: true
+    firewall:
+      port: ['1433/tcp']
+      state: enabled
+
+  roles:
+    - microsoft.sql.server
+    - redhat.rhel_system_roles.firewall
 
 # - hosts: localhost
 
@@ -27,15 +46,15 @@
     # shell: "yum install -y ansible-collection-microsoft-sql rhel-system-roles"
 
 
-  vars:
-    mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
-    mssql_accept_microsoft_cli_utilities_for_sql_server_eula: true
-    mssql_accept_microsoft_sql_server_standard_eula: true
-    mssql_password: "YourP@ssw0rd"
-    mssql_edition: Evaluation
-    mssql_enable_sql_agent: true
-    mssql_install_fts: true
-    mssql_install_powershell: true
-    mssql_tune_for_fua_storage: true
-  roles:
-    - microsoft.sql.server
+  # vars:
+  #   mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
+  #   mssql_accept_microsoft_cli_utilities_for_sql_server_eula: true
+  #   mssql_accept_microsoft_sql_server_standard_eula: true
+  #   mssql_password: "YourP@ssw0rd"
+  #   mssql_edition: Evaluation
+  #   mssql_enable_sql_agent: true
+  #   mssql_install_fts: true
+  #   mssql_install_powershell: true
+  #   mssql_tune_for_fua_storage: true
+  # roles:
+  #   - microsoft.sql.server
