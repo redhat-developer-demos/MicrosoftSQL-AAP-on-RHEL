@@ -10,13 +10,15 @@
     shell: "echo 'hi'"
 
   - name: dependancy
+    ansible.builtin.dnf:
+      name: ansible-collection-microsoft-sql
  
-    dnf:
-      name:
-        - ansible-collection-microsoft-sql
-        - rhel-system-roles
-    vars:
-      ansible_python_interpreter: /usr/bin/python3
+    # dnf:
+      # name:
+      #   - ansible-collection-microsoft-sql
+      #   - rhel-system-roles
+    # vars:
+    #   ansible_python_interpreter: /usr/bin/python3
 
 
 
