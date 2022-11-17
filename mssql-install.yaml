@@ -8,6 +8,8 @@
 
   - name: dependancy
     shell: "ansible-galaxy collection install microsoft.sql"
+    
+  - include: site.yaml
 
   # - name: dependancy
   #   ansible.builtin.dnf:
