@@ -12,6 +12,8 @@
   - name: dependancy
     ansible.builtin.dnf:
       name: ansible-collection-microsoft-sql
+    vars:
+      ansible_python_interpreter: /usr/bin/python3.9
  
     # dnf:
       # name:
