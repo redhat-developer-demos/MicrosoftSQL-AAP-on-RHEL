@@ -1,8 +1,7 @@
 - hosts: localhost
 
-#   tasks:  
-#   - name: dependancy
-#     shell: "ansible-galaxy collection install microsoft.sql"
+  collections:
+  - microsoft.sql
     
   vars:
     mssql_accept_microsoft_odbc_driver_17_for_sql_server_eula: true
@@ -15,4 +14,4 @@
     mssql_install_powershell: true
     mssql_tune_for_fua_storage: true
   roles:
-    - microsoft.sql
+    - microsoft.sql.server
