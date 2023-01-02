@@ -1,5 +1,0 @@
----
-- name: Playbook_1
-  import_playbook: mssql-install.yaml
-- name: Playbook_2
-  import_playbook: site.yaml
